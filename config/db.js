@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-
+//just and edit
 console.log("insinde");
 
 const connection = mongoose.createConnection('mongodb+srv://chinmay:AaOtBYEM00XspUsv@cluster0.g3qee5d.mongodb.net/').on('open',()=>{
