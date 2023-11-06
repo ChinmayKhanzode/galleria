@@ -4,7 +4,7 @@ const db = require('./config/db');
 
 const usermodel  = require('./user.model')
 
-const port = 3000;
+const port = process.env.PORT | 3000;
 
 
 app.get('/',(req,res)=>{
@@ -20,7 +20,6 @@ app.get("/getter",(req,res)=>{
             console.log(err)
         })
 });
-
 
 
 app.listen(port,()=>{
