@@ -9,6 +9,5 @@ const app = express();
 app.use(express.json())
 // app.use(bodyParser);
 
-app.use('/',userRouter);
 
 module.exports = app;
