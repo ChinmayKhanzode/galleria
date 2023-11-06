@@ -7,12 +7,13 @@ exports.register = async(req,res,next)=>{
     var imgurl = req.body.imgurl;
 
     var myobj = { imgurl: imgurl };
-    
-    db.collection("images").insertOne(myobj, function(err, res) {  
+    console.log("1");
+    await db.collection("images").insertOne(myobj, function(err, res) {  
         console.log(res);
         if (err) throw err;
         console.log("1 record inserted");  
         });
+    console.log("2");
 
     res.json({requestBody: req.body});
     console.log("all done");
