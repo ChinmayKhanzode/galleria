@@ -8,14 +8,18 @@ exports.register = async(req,res,next)=>{
 
     var myobj = { imgurl: imgurl };
     console.log("1");
-    await db.collection("images").insertOne(myobj, function(err, res) {  
-        console.log(res);
-        if (err) throw err;
-        console.log("1 record inserted");  
-        });
+    dsknf();
     console.log("2");
 
     res.json({requestBody: req.body});
     console.log("all done");
     
+}
+
+async function dsknf(){
+    await db.collection("images").insertOne(myobj, function(err, res) {  
+        console.log(res);
+        if (err) throw err;
+        console.log("1 record inserted");  
+        });
 }
