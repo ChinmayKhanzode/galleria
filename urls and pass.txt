@@ -1,0 +1,13 @@
+chinmay
+
+AaOtBYEM00XspUsv
+
+mongodb+srv://chinmay:AaOtBYEM00XspUsv@cluster0.g3qee5d.mongodb.net/
+
+https://lemon-cocoon-sari.cyclic.app
+
+
+
+github token
+
+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
