@@ -4,6 +4,9 @@ const db = require('./config/db');
 
 const usermodel  = require('./user.model')
 
+const cors = require('cors');
+
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 
